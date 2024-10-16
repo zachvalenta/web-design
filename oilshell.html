@@ -1,0 +1,306 @@
+<!-- Saved from https://www.oilshell.org/ at 2024-10-16T00:09:27Z using monolith v2.8.3 -->
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Oils</title>
+  <meta name="twitter:title" content="Oils">
+<meta name="twitter:site" content="oilshell.org">
+<meta name="twitter:creator" content="@oilsforunix">
+<meta name="twitter:card" content="summary">
+
+
+  <link rel="stylesheet" type="text/css" href="data:text/css;base64,LyogYmFzZS5jc3M6IFN0eWxlIGNvbW1vbiB0byBhbGwgcGFnZXMgb24gb2lsc2hlbGwub3JnLgogKi8KCkBtZWRpYSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDgwMHB4KSB7CiAgLyogbW9iaWxlOiBkaXN0YW5jZSBmcm9tIGxlZnQvcmlnaHQgZWRnZSAqLwogIGJvZHkgewogICAgcGFkZGluZzogMCAxZW07CiAgfQogIC8qIG1vYmlsZTogaG9yaXpvbnRhbCBzY3JvbGxiYXIgZm9yIGNvZGUsIHNvIHRoZSBsb25nIGxpbmVzIGRvbid0IG1ha2UgdGhlIHBhZ2Ugc21hbGwgKi8KICBwcmUgewogICAgb3ZlcmZsb3c6IGF1dG87CiAgfQp9CgovKiB3aWRlIHNjcmVlbnM6IENlbnRlciBhbmQgbGltaXQgd2lkdGggZm9yIHJlYWRhYmlsaXR5ICovCkBtZWRpYSBzY3JlZW4gYW5kIChtaW4td2lkdGg6IDgwMXB4KSB7CiAgYm9keSB7CiAgICBtYXJnaW46IDAgYXV0bzsKICAgIGxpbmUtaGVpZ2h0OiAxLjQ7ICAvKiBodHRwOi8vYmV0dGVybW90aGVyZnVja2luZ3dlYnNpdGUuY29tLyAqLwogICAgZm9udC1zaXplOiBsYXJnZTsgIC8qIDIwMjQtMDEgLSBhbGwgcGFnZXMgZGVzZXJ2ZSB0aGlzICovCiAgfQoKICAuc2tpbm55IHsgd2lkdGg6IDMwZW07IH0gIC8qIE1vc3QgYmxvZyBwb3N0cyAqLwogIC53aWRlciB7IHdpZHRoOiA0NWVtOyB9ICAgLyogQSBmZXcgcG9zdHMgd2l0aCB0YWJsZXMgKi8KCiAgLyogV2UgZG9uJ3Qgd2FudCB0b28gbWFueSBkaXN0aW5jdCB3aWR0aHMsIHNvIHByZS1kZWNsYXJlIHRoZW0gaGVyZS4gKi8KICAud2lkdGg0MCB7IHdpZHRoOiA0MGVtOyB9ICAvKiB0aGUgZGVmYXVsdCBmb3IgZG9jLyoubWQgKi8KICAud2lkdGg1MCB7IHdpZHRoOiA1MGVtOyB9ICAvKiByZWxlYXNlcy5odG1sIHVzZXMgdGhpcyAqLwogIC53aWR0aDYwIHsgd2lkdGg6IDYwZW07IH0gIC8qIHRlc3Qvd2lsZCwgYmVuY2htYXJrcyAqLwoKICAud2lkdGgzNSB7IHdpZHRoOiAzNWVtOyB9ICAvKiBNYXkgMjAyMiB1cGRhdGUuICBNYWtlIG1vcmUgcm9vbSBmb3IgY29kZS4gKi8KfQoKYm9keSB7CiAgY29sb3I6ICM0NDQ7Cn0KCnByZSB7CiAgYmFja2dyb3VuZC1jb2xvcjogI0VFRTsKICBwYWRkaW5nOiAxZW07Cn0KCi8qIFJlbW92ZSBsZWZ0IGluZGVudCBvZiBidWxsZXQuICAwZW0gcHV0cyB0aGUgYnVsbGV0IHRvIHRoZSBMRUZUIG9mCiAqIHN1cnJvdW5kaW5nIHRleHQuICovCnVsIHsgcGFkZGluZy1sZWZ0OiAxLjJlbTsgfQpvbCB7IHBhZGRpbmctbGVmdDogMS4yZW07IH0KCiNob21lLWxpbmsgewogIHRleHQtYWxpZ246IHJpZ2h0Owp9CgojdmVyc2lvbi1pbi1oZWFkZXIgewogIGNvbG9yOiBkYXJrZ3JlZW47CiAgZm9udC13ZWlnaHQ6IGJvbGQ7Cn0KCiN3aHktc3BvbnNvciBhOmxpbmsgeyB0ZXh0LWRlY29yYXRpb246IG5vbmUgfQojd2h5LXNwb25zb3IgYTpob3ZlciB7IHRleHQtZGVjb3JhdGlvbjogdW5kZXJsaW5lIH0KI3doeS1zcG9uc29yIGEgeyBjb2xvcjogZGFya2dyZWVuOyB9CgojYnVpbGQtdGltZXN0YW1wIHsKICBtYXJnaW4tdG9wOiAyZW07CiAgcGFkZGluZy10b3A6IDAuNWVtOwogIHBhZGRpbmctYm90dG9tOiAyZW07CiAgYm9yZGVyLXRvcDogc29saWQgMXB4ICNCQkI7Cn0KCi5pbi1wcm9ncmVzcyB7CiAgY29sb3I6IGRhcmtyZWQ7Cn0KCgovKiAKICogVXNhZ2U6IDx0YWJsZSBjbGFzcz0iY29sMy1yaWdodCBjb2w1LXJpZ2h0Ij4KICoKICogY29sZ3JvdXAvY29sIGRvZXNuJ3Qgd29yayBmb3IgcmlnaHQtanVzdGlmeWluZyBjb2x1bW5zCiAqLwoKLmNvbDEtcmlnaHQgdGQ6bnRoLWNoaWxkKDEpLAouY29sMi1yaWdodCB0ZDpudGgtY2hpbGQoMiksCi5jb2wzLXJpZ2h0IHRkOm50aC1jaGlsZCgzKSwKLmNvbDQtcmlnaHQgdGQ6bnRoLWNoaWxkKDQpLAouY29sNS1yaWdodCB0ZDpudGgtY2hpbGQoNSksCi5jb2w2LXJpZ2h0IHRkOm50aC1jaGlsZCg2KSwKLmNvbDYtcmlnaHQgdGQ6bnRoLWNoaWxkKDcpLAouY29sNi1yaWdodCB0ZDpudGgtY2hpbGQoOCkgewogIHRleHQtYWxpZ246IHJpZ2h0Cn0KLyogb2lsc2hlbGwvb2lsL3dlYi9ibG9nLXY2LmNzcyAKICoKICogQmxvZyBzdHlsZSBhcyBvZiBNYXkgMjAyMi4gIEFkZGVkIHNwYWNpbmcgdG8gYXZvaWQgbWFudWFsICZuYnNwOwogKiBEaWQgbm90IGNoYW5nZSBmb250IHNpemUsIHRob3VnaCBpdCBhbm5veXMgbWUgb24gQ2hyb21lIExpbnV4CiAqLwoKQG1lZGlhIHNjcmVlbiBhbmQgKG1pbi13aWR0aDogODAxcHgpIHsKICBib2R5IHsKICAgIGZvbnQtc2l6ZTogbGFyZ2U7CiAgfQp9CgojbGF0Y2gtc3RhdHVzIHsKICB0ZXh0LWFsaWduOiBjZW50ZXI7CiAgY29sb3I6IGdyZXk7Cn0KCmgxIHsKICB0ZXh0LWFsaWduOiBjZW50ZXI7Cn0KCi5ibG9nLXBvc3QtdGl0bGUgewogIHRleHQtYWxpZ246IGxlZnQ7CiAgZm9udC1zaXplOiAxLjNlbTsKfQoKaDIgewogIC8qIHgtbGFyZ2UgaXMgdG9vIGJpZzsgY2F1c2VzIG1vc3QgdGl0bGVzIHRvIHdyYXAgYmFkbHkgKG9uIENocm9tZS9GaXJlZm94IGRlc2t0b3ApLiAqLwogIGZvbnQtc2l6ZTogMS4yZW07CiAgcGFkZGluZy10b3A6IDJlbTsgIC8qIHNlcGFyYXRlIHNlY3Rpb25zICovCn0KCmgzIHsKICBtYXJnaW46IDBlbTsKICBjb2xvcjogZGFya2dyZWVuOwogIGZvbnQtc2l6ZTogMWVtOyAgLyogU2ltaWxhciB0byBkZWZhdWx0IGg0ICovCgogIHBhZGRpbmctdG9wOiAxZW07ICAvKiBzZXBhcmF0ZSBzZWN0aW9ucyAqLwp9CgovKiBTYW1lIGFzIGg0LCBidXQgZG9lc24ndCBhcHBlYXIgaW4gVE9DICovCmg0IHsKICBtYXJnaW46IDBlbTsKICBmb250LXNpemU6IDFlbTsKICBwYWRkaW5nLXRvcDogMWVtOyAgLyogc2VwYXJhdGUgc2VjdGlvbnMgKi8KfQoKLyogRXhjbHVkZSA8cHJlPjxjb2RlPi4gIElzIHRoZXJlIGEgYmV0dGVyIHdheSB0byBkbyB0aGlzPyAgKi8KcCBjb2RlLCBkaXYgY29kZSwgbGkgY29kZSwgaDIgY29kZSwgaDMgY29kZSB7CiAgY29sb3I6IGdyZWVuOwp9CgovKiBDb21wYXJlZCB3aXRoIHY0ICovCmJsb2NrcXVvdGUgewogIGZvbnQtZmFtaWx5OiBzYW5zLXNlcmlmOwogIGZvbnQtc2l6ZTogbWVkaXVtOyAgLyogc2VlbXMgdG8gbG9vayBiZXR0ZXIgKi8KICBmb250LXN0eWxlOiBpdGFsaWM7CiAgY29sb3I6IGJsYWNrOwoKICBtYXJnaW46IDA7CiAgYm9yZGVyLWxlZnQ6IDEwcHggc29saWQgI2NjYzsKICAvKiBPbmx5IDFweCB2ZXJ0aWNhbCBiZWNhdXNlIDxibG9ja3F1b3RlPjxwPiBwcm9kdWNlcyAiYnVsZ2UiICovCiAgcGFkZGluZzogMXB4IDFlbTsKfQoKLmxpbmstYm94IHsKICBtYXJnaW46IDFlbSAwOyAgLyogZGl2IG5lZWRzIHNlcGFyYXRpb24gKi8KICBwYWRkaW5nOiAxcHggMWVtOwogIGJhY2tncm91bmQtY29sb3I6ICNlZWU7Cn0KCi50aXRsZS13aXRob3V0LWxpbmsgewogIGNvbG9yOiBkYXJrZ3JlZW47Cn0KCi5mb290bm90ZXMgewogIGZvbnQtc2l6ZTogc21hbGw7Cn0KCi5kYXRlIHsKICBmb250LXNpemU6IG1lZGl1bTsKICBjb2xvcjogIzU1NTsKICBwYWRkaW5nLWxlZnQ6IDFlbTsKICBwYWRkaW5nLXJpZ2h0OiAxZW07CiAgd2hpdGUtc3BhY2U6IG5vd3JhcDsKfQoKLyogQkVHSU4gYmxvZy8gKi8KCi5zZXAtcm93IHsKICB2ZXJ0aWNhbC1hbGlnbjogY2VudGVyOwp9CgoucG9zdC1saXN0IHRyIHsKICB2ZXJ0aWNhbC1hbGlnbjogdG9wOwp9Ci5wb3N0LWxpc3QgYSB7CiAgdGV4dC1kZWNvcmF0aW9uOiBub25lOwp9Ci5wb3N0LWxpc3QgYTpob3ZlciB7CiAgdGV4dC1kZWNvcmF0aW9uOiB1bmRlcmxpbmU7Cn0KLyogU2F2ZSBzcGFjZSAqLwoucG9zdC1saXN0IC5kYXRlIHsKICBwYWRkaW5nLWxlZnQ6IDBlbTsKfQoKLyogU3VidGx5IHN0YW5kIG91dCAqLwouYWx0LW1vbnRoIC5kYXRlIHsKICBjb2xvcjogIzAwMDsKfQoKI2FsbC1wb3N0cyB0Ym9keSB7CiAgLyogTk9URTogVGhpcyBzZWVtcyB0byBtYWtlIHRoZSB0YWJsZSBiYWNrZ3JvdW5kIHNvbGlkIGxpa2UgYm9yZGVyLWNvbGxhcHNlOgogICAqIGNvbGxhcHNlLCBidXQgZG9lc24ndCBtZXNzIHdpdGggc3BhY2luZy4KICAgKi8KICBkaXNwbGF5OiBibG9jazsKfQoKLyogb24gYmxvZy9pbmRleC5odG1sICovCiNibG9nLXRhZy1saXN0IHsKICAvKiB0ZXh0LWFsaWduOiBqdXN0aWZ5OyAqLwogIGNvbG9yOiBncmF5Owp9CgoudGFnLWNvdW50IHsKICB3aGl0ZS1zcGFjZTogbm93cmFwOwp9CgovKiBFTkQgYmxvZy8gKi8KCi8qIEZvciBwb3N0IGJvZGllczogKi8KCi5ibG9nLXRhZyB7CiAgZm9udC1mYW1pbHk6IHNhbnMtc2VyaWY7Cn0KCiNwb3N0LWZvb3RlciB7CiAgYmFja2dyb3VuZC1jb2xvcjogI0RFRTsKICBwYWRkaW5nOiAwLjVlbTsKfQoKLmF0dGVudGlvbiB7CiAgdGV4dC1hbGlnbjogY2VudGVyOwogIGJhY2tncm91bmQtY29sb3I6ICNERUU7CiAgcGFkZGluZzogMXB4IDAuNWVtOwp9CgovKiBhbmNob3JzIGluIGNyb3NzLXJlZi5odG1sICovCmFbbmFtZV0gewogIGNvbG9yOiBncmVlbjsKfQoKLyogTGlua3MgdG8gY3Jvc3MtcmVmLmh0bWwuICBJIGNvcGllZCBjb2xvciB2YWx1ZXMgZnJvbSBjb2RlLmNzcyBmb3IgdmlzdWFsCmhhcm1vbnkuICovCmFbaHJlZl49Ii9jcm9zcy1yZWYuaHRtbCJdIHsKICBjb2xvcjogIzQwNzBhMCAvKiBMaXRlcmFsLlN0cmluZyAqLwp9CgphW2hyZWZePSIvY3Jvc3MtcmVmLmh0bWwiXTp2aXNpdGVkIHsKICAvKiBjb2xvcjogI2JiNjBkNSAvKiBOYW1lLlZhcmlhYmxlICovCiAgY29sb3I6IHB1cnBsZTsKfQoKLyogSW50ZXJuYWwgbGlua3MuICBUaGlzIGlzIHNvIHRoYXQgY3Jvc3MtcmVmLmh0bWwgaXMgY29uc2lzdGVudC4gIFRlY2huaWNhbGx5CndlIG1pZ2h0IHdhbnQgdG8gZXhjbHVkZSBvdGhlciBpbnRlcm5hbCBsaW5rcywgYnV0IEkgZG9uJ3QgaGF2ZSBtYW55IG9mIHRob3NlCnJpZ2h0IG5vdy4gKi8KYVtocmVmXj0iIyJdIHsKICBjb2xvcjogIzQwNzBhMCAvKiBMaXRlcmFsLlN0cmluZyAobGlnaHQgYmx1ZSkgKi8KfQoKYVtocmVmXj0iIyJdOnZpc2l0ZWQgewogIC8qIGNvbG9yOiAjYmI2MGQ1IC8qIE5hbWUuVmFyaWFibGUgKGxpZ2h0IHB1cnBsZSkgKi8KICBjb2xvcjogcHVycGxlOwp9Ci5ib29rLXRleHQtbGluay10ZCB7CiAgcGFkZGluZzogMWVtOwogIGJvcmRlci10b3A6IHNvbGlkIDFweCAjQkJCOwp9CgouYm9vay1pbWFnZS10ZCB7CiAgd2lkdGg6IDMwLjAwMDAwMiUKfQoKLmJvb2stZGVzYy10ZCB7CiAgdmVydGljYWwtYWxpZ246IHRvcDsKfQoKLyogRm9yIGJvb2tzIGFuZCBvdGhlcnMgKi8KaHIgewogIGJvcmRlcjogbm9uZTsKICBoZWlnaHQ6IDFweDsKICBiYWNrZ3JvdW5kLWNvbG9yOiAjQkJCOwp9CgovKiBGb3IgYmxvZyByZWxlYXNlIG5vdGVzLiAgQ29waWVkIGZyb20gd2ViL2NoYW5nZWxvZy5jc3MgKi8KLmNoZWNrc3VtIHsKICBmb250LWZhbWlseTogbW9ub3NwYWNlOwp9Ci5pc3N1ZS1udW0gewogIGZvbnQtZmFtaWx5OiBtb25vc3BhY2U7CiAgd2lkdGg6IDNlbTsKfQouaXNzdWUtdGl0bGUgewogIGZvbnQtZmFtaWx5OiBzYW5zLXNlcmlmOwp9Ci5zdWJqZWN0IHsKICBmb250LWZhbWlseTogc2Fucy1zZXJpZjsKfQovKgogKiBGb3IgdG9jLmpzIC0tIGFsc28gdGFrZW4gZnJvbSBhc2NpaWRvYy4KICovCgpkaXYjdG9jIHsKICBtYXJnaW4tdG9wOiAyZW07CiAgYmFja2dyb3VuZC1jb2xvcjogb2xkbGFjZTsKICBwYWRkaW5nOiAxZW07Cn0KCmRpdiN0b2MgYSB7CiAgdGV4dC1kZWNvcmF0aW9uOiBub25lOwp9CgojdG9jdGl0bGUsICNkZW5zZS10b2MtdGl0bGUgewogIHRleHQtYWxpZ246IGNlbnRlcjsKICBjb2xvcjogIzY2NjsKICBmb250LXdlaWdodDogYm9sZDsKICBtYXJnaW4tYm90dG9tOiAwLjJlbTsKfQoKZGl2LnRvY2xldmVsMSwgZGl2LnRvY2xldmVsMiwgZGl2LnRvY2xldmVsMywgZGl2LnRvY2xldmVsNCB7CiAgbWFyZ2luLXRvcDogMDsKICBtYXJnaW4tYm90dG9tOiAwOwp9CmRpdi50b2NsZXZlbDEgewogIG1hcmdpbi1sZWZ0OiAyZW07CiAgZm9udC1zaXplOiAwLjllbTsKfQpkaXYudG9jbGV2ZWwyIHsKICBtYXJnaW4tbGVmdDogNGVtOwogIGZvbnQtc2l6ZTogMC45ZW07Cn0KCi8qIERlbnNlIFRPQyBzdHlsZSBmb3IgZG9jL3JlZiAqLwoKLyogVGhlIHdob2xlIFRPQyAqLwpkaXYjZGVuc2UtdG9jIHsKICAvKiBjb3BpZWQgZnJvbSB0b2MgKi8KICBtYXJnaW4tdG9wOiAyZW07CiAgYmFja2dyb3VuZC1jb2xvcjogb2xkbGFjZTsKICBwYWRkaW5nOiAxZW07Cn0KCmRpdiNkZW5zZS10b2MtY29scyB7CiAgY29sdW1uLXdpZHRoOiAxMGVtOwp9CgpkaXYjZGVuc2UtdG9jIGEgewogIHRleHQtZGVjb3JhdGlvbjogbm9uZTsKfQoKLyogUmVwcmVzZW50cyBPTkUgaDIgYW5kIEFMTCBoMyBjaGlsZHJlbgogICBUaGV5IGFyZSBhbiBVTkJSRUFLQUJMRSB1bml0CiAqLwouZGVuc2UtdG9jLWdyb3VwIHsKICAvKiAKICAnb3ZlcmZsb3c6IGhpZGRlbicgaXMgYW4gb2xkZXIgdGhpbmcgdGhhdCBzZWVtcyBwcmV2ZW50IGJyZWFraW5nCiAgICovCiAgb3ZlcmZsb3c6IGhpZGRlbjsKICAvKgogICdwYWdlLWJyZWFrLWluc2lkZTogYXZvaWQnIGlzIG5ld2VyCiAgaHR0cHM6Ly9zdGFja292ZXJmbG93LmNvbS9xdWVzdGlvbnMvNzc4NTM3NC9ob3ctdG8tcHJldmVudC1jb2x1bW4tYnJlYWstd2l0aGluLWFuLWVsZW1lbnQKICAqLwogIHBhZ2UtYnJlYWstaW5zaWRlOiBhdm9pZDsKCiAgbWFyZ2luLWxlZnQ6IDFlbTsKICBtYXJnaW4tYm90dG9tOiAxZW07Cn0KCi8qIE9uZSBoMyBjaGlsZCAqLwouZGVuc2UtdG9jLWgzIHsKICBtYXJnaW4tbGVmdDogMWVtOwogIGZvbnQtc2l6ZTogMC45ZW07Cn0KLyogRm9yIHN5bnRheCBoaWdobGlnaHRpbmcgYGBgIGJsb2NrcyAqLwoKLnNoLXByb21wdCB7CiAgZm9udC13ZWlnaHQ6IGJvbGQ7CiAgY29sb3I6ICM2NjY7Cn0KCi5zaC1jb21tYW5kIHsKICBjb2xvcjogZGFya2JsdWU7Cn0KCi5zaC1jb21tZW50IHsKICBmb250LXN0eWxlOiBpdGFsaWM7CiAgY29sb3I6IGdyZWVuOwp9Cgouc2gtdGFiLWNvbXBsZXRlIHsKICBjb2xvcjogIzY2NjsKfQo=">
+  <script type="text/javascript" src="data:text/javascript;base64,Ly8gVE9ETzogQ2hlY2sgV2ViQXNzZW1ibHkgb24gcGluZzEKCmZ1bmN0aW9uIGFqYXhHZXQodXJsLCBlcnJFbGVtKSB7CiAgdmFyIHhociA9IG5ldyBYTUxIdHRwUmVxdWVzdCgpOwogIHhoci5vcGVuKCdHRVQnLCB1cmwsIHRydWUgLyphc3luYyovKTsKICB4aHIub25yZWFkeXN0YXRlY2hhbmdlID0gZnVuY3Rpb24oKSB7CiAgICBpZiAoeGhyLnJlYWR5U3RhdGUgIT0gNCAvKkRPTkUqLykgewogICAgICByZXR1cm47CiAgICB9CgogICAgaWYgKHhoci5zdGF0dXMgIT0gMjAwKSB7CiAgICAgIHZhciBtc2cgPSAnRVJST1IgcmVxdWVzdGluZyAnICsgdXJsICsgJzogJyArIHhoci5zdGF0dXMgKyAnICcgKwogICAgICAgICAgICAgICAgeGhyLnN0YXR1c1RleHQ7CiAgICAgIGlmIChlcnJFbGVtKSB7CiAgICAgICAgYXBwZW5kTWVzc2FnZShlcnJFbGVtLCBtc2cpOwogICAgICB9CiAgICAgIHJldHVybjsKICAgIH0KICB9OwogIHhoci5zZW5kKCk7Cn0KCmZ1bmN0aW9uIHBpbmcodCkgewogIHJldHVybiBmdW5jdGlvbigpIHsKICAgIHZhciB1cmwgPSAnL2E/dT0nICsgd2luZG93LmxvY2F0aW9uLnBhdGhuYW1lICsgJyZ0PScgKyB0ICsgJyZ3PScgKyB3YXNtUmVzdWx0OwogICAgYWpheEdldCh1cmwpOyAgLy8gc2V0IGVycm9yIGVsZW1lbnQgZm9yIGRlYnVnZ2luZwogIH0KfQoKdmFyIHdhc21SZXN1bHQgPSAwOwoKLy92YXIgdGltZXMgPSBbMSwgMiwgM107CnZhciB0aW1lcyA9IFsxLCAxMCwgMTAwLCAxMDAwXTsKZm9yICh2YXIgaSA9IDA7IGkgPCB0aW1lcy5sZW5ndGg7ICsraSkgewogIHZhciB0ID0gdGltZXNbaV07CiAgc2V0VGltZW91dChwaW5nKHQpLCB0ICogMTAwMCk7ICAvLyBtaWxsaXNlY29uZHMKfQoKZnVuY3Rpb24gd2FzbVBpbmcoKSB7CiAgdmFyIHdhc21Db2RlID0gbmV3IFVpbnQ4QXJyYXkoWzAsOTcsMTE1LDEwOSwxLDAsMCwwLDEsMTMzLDEyOCwxMjgsMTI4LDAsMSw5NiwwLDEsMTI3LDMsMTMwLDEyOCwxMjgsMTI4LDAsMSwwLDQsMTMyLDEyOCwxMjgsMTI4LDAsMSwxMTIsMCwwLDUsMTMxLDEyOCwxMjgsMTI4LDAsMSwwLDEsNiwxMjksMTI4LDEyOCwxMjgsMCwwLDcsMTQ1LDEyOCwxMjgsMTI4LDAsMiw2LDEwOSwxMDEsMTA5LDExMSwxMTQsMTIxLDIsMCw0LDEwOSw5NywxMDUsMTEwLDAsMCwxMCwxMzgsMTI4LDEyOCwxMjgsMCwxLDEzMiwxMjgsMTI4LDEyOCwwLDAsNjUsNDIsMTFdKTsKICB2YXIgbSA9IG5ldyBXZWJBc3NlbWJseS5JbnN0YW5jZShuZXcgV2ViQXNzZW1ibHkuTW9kdWxlKHdhc21Db2RlKSk7CiAgd2FzbVJlc3VsdCA9IG0uZXhwb3J0cy5tYWluKCk7Cn0KCndhc21QaW5nKCk7Cg=="></script>
+
+  <!-- INSERT LATCH JS -->
+<link rel="icon" href="data:image/vnd.microsoft.icon;base64,"></link></head>
+
+<body onload="" class="width40">
+  <!-- INSERT LATCH HTML -->
+<h1>Oils</h1>
+<style>
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.lang-name {
+  font-size: xx-large;
+}
+
+.lang-desc {
+  text-align: center;
+}
+
+.osh-cell {
+  background-color: rgb(90% 90% 95%);
+  width: 100%;
+  /*padding: 0.5em;*/
+  /* border-right: solid black 1px; */
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.ysh-cell {
+  background-color: rgb(90% 95% 90%);
+  width: 100%;
+  /*padding: 0.5em;*/
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.code-snippet {
+  font-family: monospace;
+  white-space: pre;
+  text-align: left;
+}
+
+.pp {
+  color: darkgreen;
+}
+
+.two-shells {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.one-shell {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 45%; /* Allows two items per row on wider screens */
+}
+
+@media (max-width: 600px) {
+    .two-shells {
+        flex-direction: column;
+        align-items: center;
+    }
+    .one-shell {
+        width: 100%;
+    }
+}
+
+#why-sponsor {
+  font-size: x-large;
+  text-align: center;
+}
+
+</style>
+<div style="text-align: center">
+<p>Our upgrade path from <a href="https://www.oilshell.org/cross-ref.html?tag=bash#bash">bash</a> to a better language and runtime.</p>
+</div>
+<div class="two-shells">
+  <div class="one-shell">
+   <div class="osh-cell">
+     <div class="shell-name">
+       <span class="lang-name"><a href="https://www.oilshell.org/cross-ref.html#OSH">OSH</a></span>
+     </div>
+     <div class="lang-desc">runs your existing shell scripts <br> &nbsp; </div>
+   </div>
+   <div class="code-snippet">
+  echo "hello $oops"
+              ^~~~~
+fatal: Undefined variable 'oops'
+   </div>
+  </div>
+  <div class="one-shell">
+   <div class="ysh-cell">
+     <div class="shell-name">
+       <span class="lang-name"><a href="https://www.oilshell.org/cross-ref.html#YSH">YSH</a></span>
+     </div>
+     <div class="lang-desc">is for Python and JavaScript users who avoid shell!</div>
+   </div>
+   <div class="code-snippet">
+<b>ysh$</b> json read &lt; x.json
+<b>ysh$</b> = _reply
+<span class="pp">(Dict)</span>   {shell: "ysh", fun: true}
+   </div>
+  </div>
+</div>
+<p> </p>
+<style>
+.left-label {
+  font-size: x-large;
+  width: 25%;
+  text-align: center;
+}
+.linked-label {
+  background-color: #eee;
+}
+#link-table {
+  width: 90%;
+  margin: 0 auto;
+}
+#link-table td {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+
+  vertical-align: top;
+  /* same color as <hr/> */
+  border-top: solid #bbb 1px;
+  /* border-top: solid black 1px; */
+}
+</style>
+<table id="link-table" cellpadding="0" cellspacing="0">
+  <tbody><tr>
+   <td class="left-label linked-label">
+<p><a href="https://www.oilshell.org/release/0.23.0/">Latest Release</a></p>
+   </td>
+   <td>
+<p>OSH and YSH live inside the same 2 MB <code>oils-for-unix</code> binary</p>
+<p><a href="https://www.oilshell.org/releases.html">All Releases</a>   <a href="https://www.oilshell.org/release/latest/">/release/latest/</a><br>
+<a href="https://www.oilshell.org/release/0.23.0/doc/ref/"><strong>Oils Reference</strong></a>   <a href="https://github.com/oils-for-unix/oils/wiki/Where-To-Send-Feedback">Where To Send Feedback</a></p>
+   </td>
+  </tr>
+  <tr>
+   <td class="left-label linked-label">
+<p><a href="https://www.oilshell.org/blog/">Read the Blog</a></p>
+   </td>
+   <td>
+<p>Get notified about new blog posts:</p>
+<p>follow <a href="https://hachyderm.io/@oilsforunix">@oilsforunix on Mastodon</a><br>
+follow <a href="https://twitter.com/oilsforunix">@oilsforunix on Twitter</a><br>
+by <a href="https://www.reddit.com/r/oilshell/.rss">RSS via Reddit</a>   Visit
+<a href="https://old.reddit.com/r/oilshell/">/r/oilshell</a><br></p>
+   </td>
+  </tr>
+  <tr>
+   <td class="left-label">
+<p>Highlights</p>
+   </td>
+   <td>
+<p><a href="https://www.oilshell.org/blog/2023/03/faq.html">Oils 2023 FAQ</a>   <a href="https://www.oilshell.org/blog/2021/01/why-a-new-shell.html">Why Create a New Unix Shell?</a><br>
+Posts Tagged #<a href="https://www.oilshell.org/blog/tags.html?tag=FAQ#FAQ">FAQ</a>   <a href="https://www.oilshell.org/blog/2020/01/simplest-explanation.html">The Simplest Explanation</a></p>
+<p><a href="https://www.oilshell.org/release/latest/doc/ysh-tour.html"><strong>A Tour of YSH</strong></a>  
+<a href="https://www.oilshell.org/release/latest/doc/idioms.html">YSH vs. Shell Idioms</a></p>
+   </td>
+  </tr>
+  <tr>
+   <td class="left-label">
+<p>Repo</p>
+   </td>
+   <td>
+<p><a href="https://github.com/oils-for-unix/oils"><strong>oils-for-unix/oils</strong></a> on GitHub<br>
+<a href="https://www.oilshell.org/blog/2023/03/roadmap.html">What We Can Use Help With</a><br>
+#<a href="https://oilshell.zulipchat.com/#narrow/stream/417617-help-wanted">help-wanted</a> suggests places to start changing the code</p>
+<p>Build results are published to one of:<br>
+<a href="https://ci.oilshell.org/uuu/github-jobs/">ci.oilshell.org</a>  
+<a href="https://mb.oilshell.org/uuu/github-jobs/">mb.oilshell.org</a>  
+<a href="https://op.oilshell.org/uuu/github-jobs/">op.oilshell.org</a></p>
+   </td>
+  </tr><tr>
+  </tr><tr>
+   <td class="left-label">
+<p>Discuss</p>
+   </td>
+   <td>
+<p>Zulip: <a href="https://oilshell.zulipchat.com/">oilshell.zulipchat.com</a></p>
+<p>#<a href="https://oilshell.zulipchat.com/#narrow/stream/264891-oil-help">oil-help</a> is for users to ask questions.  We welcome you!<br>
+#<a href="https://oilshell.zulipchat.com/#narrow/stream/325160-oil-discuss-public">oil-discuss-public</a> is for general discussion<br>
+#<a href="https://oilshell.zulipchat.com/#narrow/stream/121539-oil-dev">oil-dev</a> is for changing the code (please login)<br></p>
+   </td>
+  </tr><tr>
+  </tr><tr>
+   <td class="left-label">
+<p>More</p>
+   </td>
+   <td>
+<p>Topic <a href="https://www.oilshell.org/cross-ref.html">Cross Reference</a>  
+<a href="https://www.oilshell.org/site.html">About This Site</a></p>
+<p><a href="http://andychu.net">My Home Page</a><br>
+e-mail: <code>andy at oilshell dot org</code> (talk to me about shells and programming
+languages)</p>
+   </td>
+  </tr><tr>
+</tr></tbody></table>
+<hr>
+<div id="why-sponsor">
+<p><a href="https://www.oilshell.org/why-sponsor.html">Why Sponsor Oils?</a></p>
+</div>
+<div style="font-style: italic; text-align: center;">
+<p>Thank you to <a href="https://nlnet.nl">NLnet</a> for generous grants in 2022, 2023, and 2024!</p>
+</div>
+<p>&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;</p>
+
+
+</body></html>
